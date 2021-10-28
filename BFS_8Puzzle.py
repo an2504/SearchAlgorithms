@@ -6,8 +6,7 @@ goal_state = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 
 def main():
-    state = sys.argv[1]
-    start_state = state.split(",")
+    start_state = sys.argv[1].split(",")
     start_state = [int(x) for x in start_state]
 
     print(bfs(start_state))
